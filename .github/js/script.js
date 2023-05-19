@@ -5,4 +5,6 @@ function hitungLuas(){
 
     console.log(sisiLuas); 
     document.getElementById("ouput-luas").innerHTML = '<span>'+sisiLuas+'</span>';
+
+    
 }
