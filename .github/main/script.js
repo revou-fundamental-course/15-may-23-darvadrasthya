@@ -18,5 +18,7 @@ function hitungLuas(){
   }
   function resetLuas() {
     document.getElementById("sisi-luas").value = "";
-    document.getElementById("rumus-luas"||"perhitungan-luas"||"output-luas").textContent = "";
+    document.getElementById("rumus-luas").textContent = "";
+    document.getElementById("perhitungan-luas").textContent = "";
+    document.getElementById("output-luas").textContent = "";
   }
