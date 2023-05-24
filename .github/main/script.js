@@ -27,10 +27,10 @@ function hitungLuas(){
   }
   //Menghitung keliling
   function hitungKeliling(){
-    var kelilingPersegi = document.getElementById("keliling-persegi").value;
-    console.log(sisiLuas);
+    var sisiKeliling = document.getElementById("sisi-keliling").value;
+    console.log(sisiKeliling);
     //Rumus dari keliling persegi
-    var hitung = 4 * kelilingPersegi;  
+    var hitung = 4 * sisiKeliling;  
     // Visible text content
     document.getElementById("rumus-keliling").style.visibility = "visible";
     document.getElementById("rumus-keliling").style.visibility = "hidden";
@@ -42,13 +42,13 @@ function hitungLuas(){
         element.style.visibility = "hidden";
     }
 
-    document.getElementById("perhitungan-keliling").textContent = "L = "+ kelilingPersegi + "x" +kelilingPersegi;  
+    document.getElementById("perhitungan-keliling").textContent = "L = "+ sisiKeliling + "x" +sisiKeliling;  
     // Output hasil dari rumus keliling
     document.getElementById("output-keliling").textContent = "K = "+ hitung;
 }
 //fungsi untuk reset value keliling
 function resetKeliling() {
-  document.getElementById("keliling-persegi").value = "";
+  document.getElementById("sisi-keliling").value = "";
   document.getElementById("rumus-keliling").style.visibility = "";
   document.getElementById("perhitungan-keliling").textContent = "";
   document.getElementById("output-keliling").textContent = "";
