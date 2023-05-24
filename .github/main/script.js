@@ -1,8 +1,9 @@
 function hitungLuas(){ 
     var sisiLuas = document.getElementById("sisi-luas").value;
-    // Calculate the area of the square
+    console.log(sisiLuas);
+    // Rumus Luas Persegi
     var area = sisiLuas * sisiLuas;
-
+    // Visible text content
     document.getElementById("rumus-luas").style.visibility = "visible";
     document.getElementById("rumus-luas").style.visibility = "hidden";
 
@@ -12,20 +13,25 @@ function hitungLuas(){
       } else {
         element.style.visibility = "hidden";
     }
+
     document.getElementById("perhitungan-luas").textContent = "L = "+ sisiLuas + "x" +sisiLuas;  
-    // Display the result
+    // Output Hasil dari rumus luas
     document.getElementById("output-luas").textContent = "L = "+ area;
   }
+  //Fungsi untuk reset value luas
   function resetLuas() {
     document.getElementById("sisi-luas").value = "";
     document.getElementById("rumus-luas").style.visibility = "";
     document.getElementById("perhitungan-luas").textContent = "";
     document.getElementById("output-luas").textContent = "";
   }
+  //Menghitung keliling
   function hitungKeliling(){
-    let kelilingPersegi = document.getElementById("keliling-persegi").value;
+    var kelilingPersegi = document.getElementById("keliling-persegi").value;
+    console.log(sisiLuas);
+    //Rumus dari keliling persegi
     var hitung = 4 * kelilingPersegi;  
-
+    // Visible text content
     document.getElementById("rumus-keliling").style.visibility = "visible";
     document.getElementById("rumus-keliling").style.visibility = "hidden";
 
@@ -37,9 +43,10 @@ function hitungLuas(){
     }
 
     document.getElementById("perhitungan-keliling").textContent = "L = "+ kelilingPersegi + "x" +kelilingPersegi;  
-    // Display the result
+    // Output hasil dari rumus keliling
     document.getElementById("output-keliling").textContent = "K = "+ hitung;
 }
+//fungsi untuk reset value keliling
 function resetKeliling() {
   document.getElementById("keliling-persegi").value = "";
   document.getElementById("rumus-keliling").style.visibility = "";
