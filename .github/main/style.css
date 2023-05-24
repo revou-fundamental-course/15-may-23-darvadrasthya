@@ -1,0 +1,64 @@
+.header{
+    background: #10a5fa;
+    text-align: center;
+    padding: 20px 20px;
+}
+.title-jenis{
+    background: #91a5fa;
+    text-align: center;
+    padding: 20px 20px;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px;
+}
+.label{
+    text-align: center;
+}
+.btn-hitung{
+    background-color: #008CBA;
+    border: none;
+    color: white;    
+    padding: 15px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-reset{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.title{
+    font-weight: bold;
+    color: white;
+}
+.subtitle{
+    font-size: small;
+    color: grey;
+}
+.rumus{
+    text-align: center;
+}
+.card{
+    background: white;
+}
+.figure{
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example-square{
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+}
+.result-luas{
+    visibility: hidden;
+}
